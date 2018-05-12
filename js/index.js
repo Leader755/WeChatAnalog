@@ -18,6 +18,9 @@
                 num = 0;
             }
         }
+
+
+
         btn.onclick = function(){
             if(text.value ==''){
                 alert('不能发送空白消息');
@@ -32,8 +35,19 @@
                     span[iNow].className += 'spanleft';
                 }
                 text.value = '';
+                
                 // 内容过多时,将滚动条位于最底端
                 content.scrollTop=content.scrollHeight;
             }
+        }
+        document.onkeydown=function(event){
+            var e = event || window.event;
+            if(e && e.keyCode==13){ 
+                // alert(11111);
+                 btn.click(); 
+                
+           
+
+            }                
         }
     }
