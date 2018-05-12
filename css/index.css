@@ -1,0 +1,114 @@
+* {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-family: '微软雅黑'
+        }
+        #container {
+            position: relative;
+            width: 450px;
+            height: 700px;
+            background: #eee;
+            margin: 80px auto 0;
+            box-shadow: 10px 10px 30px #777;
+        }
+        .header {
+            background: #000;
+            height: 40px;
+            color: #fff;
+            line-height: 34px;
+            font-size: 20px;
+            padding: 0 10px;
+        }
+        .footer {
+            width: 430px;
+            height: 50px;
+            background: #666;
+            position: absolute;
+            bottom: 0;
+            padding: 10px;
+        }
+        .footer input {
+            position: absolute;
+            right: 80px;
+            width: 275px;
+            height: 45px;
+            font-size: 20px;
+            text-indent: 10px;
+            outline: none;
+            border-radius: 6px;
+        }
+        .footer span {
+            position: absolute;
+            right: 10px;
+            width: 62px;
+            height: 48px;
+            line-height: 48px;
+            text-align: center;
+            background: #ccc;
+            font-weight: 900;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        .footer span:hover {
+            color: #fff;
+            background: #999;
+        }
+        #userIcon {
+            position: absolute;
+            bottom: 6px;
+            left: 14px;
+            width: 60px;
+            height: 60px;
+            background: red;
+            border-radius: 50%;
+            cursor: pointer;
+            overflow: hidden;
+        }
+        img {
+            width: 60px;
+            height: 60px;
+        }
+        .content {
+            width: 435px;
+            height: 662px;
+            font-size: 20px;
+            padding: 5px;
+            overflow: auto;
+        }
+        .content li {
+            display: block;
+            width: 412px;
+            margin-top: 10px;
+            padding-left: 10px;
+            clear: both;
+            overflow: hidden;
+        }
+        .content li img {
+            float: left;
+        }
+        .content li span{
+            float: left;
+            word-wrap: break-word;/*******自动换行*********/
+            max-width: 310px;
+            margin: 6px 10px 0 10px;
+            padding: 10px;
+            background: #7cfc00;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 3px #ccc;
+        }
+        .content li img.imgleft {
+            float: left;
+        }
+        .content li img.imgright {
+            float: right;
+        }
+        .content li span.spanleft {
+            float: left;
+            background: #fff;
+        }
+        .content li span.spanright {
+            float: right;
+            background: #7cfc00;
+        }
